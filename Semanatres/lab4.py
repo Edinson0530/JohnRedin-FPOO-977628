@@ -31,7 +31,7 @@ def select_role():
 
 def match_role():
     for person in people_list:
-        match person["role"]
+        match person["role"]:
             case 1:
                 person["role"] = "Administrativo"
             case 2:
@@ -40,8 +40,8 @@ def match_role():
                 person["role"] = "Estudiante"               
         
 def print_people():
-        for persona in people_list
-        print(persona)
+        for persona in people_list:
+            print(persona)
 
 
 number =  int(input("por favor ingrese la cantidad de:"))
